@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:stretchColumns="1" >
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/text"
+        android:textSize="20dp"
+        android:textStyle="bold" android:layout_marginBottom="30dp" android:layout_marginTop="55dp"/>
+ <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/R"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/Route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:prompt="@string/Route"
+        android:entries="@array/entries" 
+        android:layout_marginBottom="5dp" 
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checker1" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checker2" android:layout_marginBottom="30dp"/>
+
+    <TableRow> 
+         <Button
+     android:id="@+id/IT"
+     android:layout_width="160dp"
+     android:layout_height="wrap_content"
+     android:text="@string/irishtrain" />
+     
+ <Button
+     android:id="@+id/lu"
+     android:layout_width="160dp"
+     android:layout_height="wrap_content"
+     android:text="@string/luas" />
+        
+        </TableRow> 
+    
+    <Button android:id="@+id/Searcher" 
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/search" 
+        	android:textSize="15dp"/>
+
+    
+
+</TableLayout>
+  

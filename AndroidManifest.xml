@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ie.com.DubBusScheduler"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+      <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+		
+      <uses-permission android:name="android.permission.INTERNET"/>
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+		
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".DublinBusSchedulerActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:label ="CustomListView" android:name="CustomListView">
+         <intent-filter>
+         <category android:name="android.intent.category.DEFAULT"></category>
+         </intent-filter>
+        </activity>
+        
+        <activity android:label ="TrainConnect" android:name=".TrainConnect">
+         <intent-filter>
+         <category android:name="android.intent.category.DEFAULT"></category>
+         </intent-filter>
+        </activity>
+        
+        <activity android:label ="TrainDetails" android:name=".TrainDetails">
+         <intent-filter>
+         <category android:name="android.intent.category.DEFAULT"></category>
+         </intent-filter>
+        </activity>
+        
+        <activity android:label ="LuasConnt" android:name=".LuasConnt">
+         <intent-filter>
+         <category android:name="android.intent.category.DEFAULT"></category>
+         </intent-filter>
+        </activity>
+        
+        <activity android:label ="LuasDetails" android:name=".LuasDetails">
+         <intent-filter>
+         <category android:name="android.intent.category.DEFAULT"></category>
+         </intent-filter>
+        </activity>
+        
+        
+        
+        <activity android:label ="luasConnect" android:name=".luasConnect">
+        <uses-library android:name="com.google.android.maps"/>
+        </activity>
+        
+        <activity android:label ="TrainMaps" android:name=".TrainMaps">
+        <uses-library android:name="com.google.android.maps"/>
+        </activity>
+        
+      
+         
+      <activity android:label ="TimeUpdater" android:name="TimeUpdater">
+         <intent-filter>
+         <category android:name="android.intent.category.DEFAULT"></category>
+         </intent-filter>
+        </activity>
+        
+        
+        
+          <receiver android:process=":remote" android:name=".AlarmReceiver"
+         android:enabled="true" 
+		 android:exported="false"
+		 android:label="AlarmReceiver">
+		 <intent-filter>
+		 <action android:name="android.intent.action.BOOT_COMPLETED" />
+		 </intent-filter>
+		   </receiver>
+		
+		
+       <service android:enabled="true"  android:name=".myService"/>
+    <uses-library android:name="com.google.android.maps"/>
+    </application>
+
+</manifest>

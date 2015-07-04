@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DublinBusSchedulerActivity!</string>
+    <string name="app_name">DublinBusScheduler</string>
+    <string name="Stnumber">Enter stop number</string>
+    <string name="StopNumGo">Go</string>
+    <string name="text">Please select your your search preference</string>
+    <string name="irishtrain">TrainConnect</string>
+    <string name="luas">LuasConnect</string>
+    <string name="search">Search</string>
+    <string name="list">List of Stops</string>
+    <string name="realtimeDet">Real Time Details</string>
+    <string name="R">ROUTES</string>
+    <string name="checker1">From AirPort to Destination </string>
+    <string name="checker2">From Destination to AirPort </string>
+    <string name="Route">Select Your Route</string>
+     <string name="forStation">Train Station:</string>
+      <string name="forBusStop">AirCoach closest Bus Stop: </string>
+      <string name="forTaxiTime">Taxi Duration to BusStop: </string>
+       <string name="forWalkTime">Walk Duration to BusStop: </string>
+       <string name="forrealTime">RealTime of Bus Arrival: </string>
+       <string name="connect">Train Connection Details </string>
+       <string name="map">Map View </string>
+    <string-array name="entries" >
+        <item>BALLSBRIDGE</item>
+        <item>LEOPARDSTOWN</item>
+        <item>CORK</item>
+       
+    </string-array>
+
+</resources>
